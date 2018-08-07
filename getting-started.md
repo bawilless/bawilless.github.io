@@ -75,7 +75,7 @@ In order to complete the labs, you'll need to have a couple of tools installed o
 
 - Set up WiFi 
 
-  - ```azsphere dev wifi add s IOTDEMO -k iotDemo1```
+  - ```azsphere dev wifi add -s IOTDEMO -k iotDemo1```
 
 - Check WiFi status with command:
 
