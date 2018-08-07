@@ -12,13 +12,13 @@ In order to complete the labs, you'll need to have a couple of tools installed o
 
 - Instructor will pass around thumb drives with the required files
 
-  - Unzip all the TP 4.2 Files into one directory.  Unzip the zip files as well into the same directory.
+  - Unzip all the TP 4.2 Files into one directory.  This will unpack two additional zip files MT3620DeviceUPdate.zip and MT3620WifiRegion.zip.  Unzip MT3620DeviceUpdate.zip into the \Customer Drop TP4.2 directory.
   
-  - Run and install tools\VS_Tools_Preview_For_Azure_Sphere.exe
+- Run and install VS_Tools_Preview_For_Azure_Sphere.exe
 
 - The instructor will pass out development kits for each student
 
-  - You are welcome to use your own MT3620 however, **you must claim your board to your own tenant**
+  - You are welcome to use your own MT3620 however, **you must claim your board to your own tenant.**
 
 ## Prepare the MT3620 board
 
@@ -26,9 +26,9 @@ In order to complete the labs, you'll need to have a couple of tools installed o
 
 - Connect MT3620 board over USB
 
-- Start "Azure Sphere Developer Command Prompt Preview" under Programs -> Azure Sphere
+- Start the "Azure Sphere Developer Command Prompt Preview" application under Programs -> Azure Sphere
 
-- Change directory to <your location>\Customer Drop TP4.2\MT3620 Device Update\Images
+- Change directory to (your location)\Customer Drop TP4.2\MT3620 Device Update\Images
 
 - Update the board using the command 
   
@@ -40,15 +40,15 @@ In order to complete the labs, you'll need to have a couple of tools installed o
 
   - ```azsphere login```
 
-  - Login with Bootcamp Azure Sphere user.  Instructor will provide username and password.
+  - Login as a Bootcamp Azure Sphere user.  Login credentials can be found in your student hardware kit.
+
+- claim your device with command: 
   
-  - claim your device with command: 
-  
-    - ```azsphere device claim```
+  - ```azsphere device claim```
 
 ### Set board to debugging mode
 
-- Set development board up for development and debugging with command:
+- Set development board up for development and debugging.  This will allow the developer to "side load" applications over the USB connection.  Set the board to debug mode with the command:
 
   - ```Azsphere device prep-debug```
 
@@ -66,14 +66,14 @@ In order to complete the labs, you'll need to have a couple of tools installed o
 
   - ```azsphere device update-devicegroup -d 63bbe6ea-14be-4d1a-a6e7-03591d882b42```
 
-- Set the Wifi Region (only needed once on older devices)  From the MT3620WifiRegion directory
+- Set the Wifi Region (only needed once on older devices) from the MT3620WifiRegion directory
   - \Customer Drop TP4.2\MT3620WifiRegion> ```./Mt3620WifiRegion US```
 
 ### Setup WiFi
 
 - Set up WiFi 
   
- - ```azsphere dev wifi add s IOTDEMO -k iotDemo1```
+   - ```azsphere dev wifi add s IOTDEMO -k iotDemo1```
 
 - Check WiFi status with command:
 
