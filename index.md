@@ -4,4 +4,4 @@ This page contains useful references that will be helpful while you attend the A
 
 ### Getting Started
 
-[Getting Started Guide](getting-started.md)
+  - [Getting Started Guide](getting-started.md)
