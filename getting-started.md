@@ -21,7 +21,6 @@ In order to complete the labs, you'll need to have a couple of tools installed o
   - You are welcome to use your own MT3620 however, **you must claim your board to your own tenant.**
 
 ### Update MT3620 Development Board
-
 - Connect MT3620 board over USB
 
 - Start the "Azure Sphere Developer Command Prompt Preview" application under Programs -> Azure Sphere
@@ -70,7 +69,7 @@ In order to complete the labs, you'll need to have a couple of tools installed o
 
 - Set the Wifi Region (only needed once on older devices) from the MT3620WifiRegion directory
 
-  - \Customer Drop TP4.2\MT3620WifiRegion> ```./Mt3620WifiRegion US```
+  - \Customer Drop TP4.2\MT3620WifiRegion> ```Mt3620WifiRegion US```
 
 ### Setup WiFi
 
