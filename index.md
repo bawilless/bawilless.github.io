@@ -1,37 +1,73 @@
-## Welcome to GitHub Pages
+# Welcome to the Azure Sphere Bootcamp information page
 
-You can use the [editor on GitHub](https://github.com/bawilless/bawilless.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This page contains usefull references that will be helpfull while you attend the Avnet Azure Sphere Bootcamp.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Getting Started
 
-### Markdown
+In order to complete the labs, you'll need to have a couple of tools installed on your laptop.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Visual Studio 2017 version 15.7 or greater
+  - Visual Studio 2017 Community (free) version is fine
+- Instructor will pass around thumbdrives with the required files
+  - Unzip all the TP 4.2 Files into one directory.  Unzip the zip files as well into the same directory.
+  - Run and install tools\VS_Tools_Preview_For_Azure_Sphere.exe
+- The instructor will pass out development kits for each student
+  - You are welcome to use your own MT3620 however, **you must claim your board to your own tennant**
 
-```markdown
-Syntax highlighted code block
+## Prepare the MT3620 board
 
-# Header 1
-## Header 2
-### Header 3
+### Update MT3620 development board
 
-- Bulleted
-- List
+- Connect MT3620 board over USB
 
-1. Numbered
-2. List
+- Start "Azure Sphere Developer Command Promt Preview" under Programs -> Azure Sphere
 
-**Bold** and _Italic_ and `Code` text
+- Change directory to <your location>\Customer Drop TP4.2\MT3620 Device Update\Images
 
-[Link](url) and ![Image](src)
-```
+- Update the board using the command 
+  
+  - 'azsphere dev recover -i .' to update the board
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Claim your device on your AAD
 
-### Jekyll Themes
+- Still in the "Azure Sphere Developer Command Promt Preview" window, use the command:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bawilless/bawilless.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+  - 'azsphere login'
 
-### Support or Contact
+  - Login with Bootcamp Azure Sphere user.  Instructor will provide username and password.
+  
+  - claim your device with command: 'azsphere device claim'
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Set board to debugging mode
+
+- Set development board up for development and debugging with command:
+
+  - 'Azsphere device prep-debug'
+
+### Assign board to the System Software group in your AAD
+
+- Use command to list all groups:
+
+  - 'azsphere dg list'  
+
+- Copy the ID of the group "System Software" 
+  
+  - System Software should have ID: '63bbe6ea-14be-4d1a-a6e7-03591d882b42'
+
+- Add device to this group with command:
+
+  - 'azsphere device update-devicegroup -d 63bbe6ea-14be-4d1a-a6e7-03591d882b42'
+
+- Set the Wifi Region (only needed once on older devices)  From the MT3620WifiRegion directory
+  - \Customer Drop TP4.2\MT3620WifiRegion> './Mt3620WifiRegion US'
+
+### Setup WiFi
+
+- Set up WiFi 
+  
+ - 'azsphere dev wifi add s IOTDEMO -k iotDemo1'
+
+- Check WiFi status with command:
+
+  - 'azsphere dev wifi show-status'
+
