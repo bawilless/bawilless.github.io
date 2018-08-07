@@ -67,10 +67,6 @@ In order to complete the labs, you'll need to have a couple of tools installed o
 
     - ```azsphere device update-devicegroup -d 63bbe6ea-14be-4d1a-a6e7-03591d882b42```
 
-- Set the Wifi Region (only needed once on older devices) from the MT3620WifiRegion directory
-
-  - \Customer Drop TP4.2\MT3620WifiRegion> ```Mt3620WifiRegion US```
-
 ### Setup WiFi
 
 - Set up WiFi 
