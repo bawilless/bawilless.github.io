@@ -20,6 +20,6 @@ This page contains useful references that will be helpful while you attend the A
   
   - [Azure Sphere Deployment Model](https://docs.microsoft.com/en-us/azure-sphere/deployment/deployment-concepts)
   
-    - White paper that 
+    - White paper that reviews the deployment model for Over The Air (OTA) deployments.
 
 
