@@ -59,8 +59,8 @@ In order to complete the labs, you'll need to have a couple of tools installed o
 
   - ```azsphere dg list```  
 
-  - Copy the ID of the group "System Software" 
-  
+  - Copy the ID of the group "System Software"
+  
   - System Software should have ID: ```63bbe6ea-14be-4d1a-a6e7-03591d882b42```
   
   - Add device to this group with command:
