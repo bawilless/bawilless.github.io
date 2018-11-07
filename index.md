@@ -24,7 +24,7 @@ This page contains useful references that will be helpful while you attend the A
 
 ### Additional Documentation
 
-- [Complete Azure Sphere Documentation](https://opdhsblobprod04.blob.core.windows.net/contents/db79b2bac84b472dbe840829123890fb/7e50fd65f291950879cae166a13617e0?sv=2015-04-05&sr=b&sig=lnZNhJk3dC1Fhl60O1gK%2FwNLfdsHb8CKl%2F5%2BAZaFack%3D&st=2018-08-15T19%3A01%3A00Z&se=2018-08-16T19%3A11%3A00Z&sp=r)
+- [Complete Azure Sphere Documentation](https://docs.microsoft.com/en-us/azure-sphere/)
 
 
 
